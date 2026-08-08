@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PerSqFt — Curated Estates Across North India</title>
+<meta name="description" content="PerSqFt Estates — curated villas, hill retreats and private estates across North India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="mainNav">
+  <a href="#" class="logo">Per<b>SqFt</b><span>ESTATES · NORTH INDIA</span></a>
+  <nav class="links">
+    <a href="#estates">Estates</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#locations">Locations</a>
+    <a href="#nivas">Nivas AI</a>
+    <a href="#why">Why Us</a>
+    <a href="#visit">Visit Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn dark-hide">Schedule a Viewing</a>
+  <button class="burger" id="burgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#estates">Estates</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#locations">Locations</a>
+  <a href="#nivas">Nivas AI</a>
+  <a href="#why">Why Us</a>
+  <a href="#visit">Visit Us</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <video id="heroVideo" autoplay muted loop playsinline poster="https://images.pexels.com/videos/37446257/aerial-architecture-drone-perspective-eco-friendly-home-luxury-villa-37446257.jpeg?auto=compress&cs=tinysrgb&h=1080&fit=crop&w=1920">
+      <source src="https://videos.pexels.com/video-files/37446257/15859942_1440_2560_30fps.mp4" type="video/mp4">
+    </video>
+    <img id="heroFallback" class="fallback" style="display:none;" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop" alt="Aerial view of a luxury villa estate">
+  </div>
+  <div class="hero-content">
+    <p class="eyebrow reveal">FOR THOSE WHO MEASURE A HOME DIFFERENTLY</p>
+    <h1 class="reveal">Every square foot,<br><span class="serif-italic">considered.</span></h1>
+    <p class="hero-sub reveal">Curated villas, hill retreats and private estates across Gurgaon, the Aravalis and the Himalayan foothills — for a clientele that doesn't browse listings, it commissions addresses.</p>
+    <div class="hero-actions reveal">
+      <a href="#estates" class="btn">View Curated Estates</a>
+      <a href="#nivas" class="btn dark" style="border-color:#f6f3ea;">Ask Nivas AI</a>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- NIVAS AI CONCIERGE -->
+<section class="nivas" id="nivas">
+  <div class="wrap nivas-grid">
+    <div class="reveal">
+      <p class="eyebrow">THE CONCIERGE</p>
+      <h2>Meet Nivas, your estate‑finding intelligence.</h2>
+      <p class="lede">Describe the home in your own words — budget, city, the things that matter to you — and Nivas reads through our entire curated inventory to bring back only what fits.</p>
+      <ul class="nivas-points">
+        <li><b>01</b> Understands natural language — no filters, no dropdowns.</li>
+        <li><b>02</b> Cross-references budget, location and lifestyle features instantly.</li>
+        <li><b>03</b> Hands you off to a dedicated advisor the moment you're ready.</li>
+      </ul>
+    </div>
+    <div class="console reveal">
+      <div class="console-head">
+        <div class="dot-row"><span></span><span></span><span></span></div>
+        <div class="status"><i></i>NIVAS · LIVE</div>
+      </div>
+      <div class="console-input">
+        <input type="text" id="nivasInput" placeholder="e.g. 4BR villa near Gurgaon, under 9 crore, with a pool">
+        <button id="nivasAsk">ASK</button>
+      </div>
+      <div class="console-suggestions">
+        <span class="chip" data-q="Mountain retreat in Mussoorie under 8 crore">Mountain retreat, Mussoorie</span>
+        <span class="chip" data-q="Golf facing villa in Sohna above 8 crore">Golf-facing, Sohna</span>
+        <span class="chip" data-q="Riverfront estate in Rishikesh">Riverfront, Rishikesh</span>
+      </div>
+      <div class="console-output" id="nivasOutput"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat reveal"><div class="num">₹2,400 Cr+</div><div class="lbl">Estates Transacted</div></div>
+  <div class="stat reveal"><div class="num">32</div><div class="lbl">Curated Addresses</div></div>
+  <div class="stat reveal"><div class="num">180+</div><div class="lbl">Private Viewings Hosted</div></div>
+  <div class="stat reveal"><div class="num">100%</div><div class="lbl">Title-Verified Listings</div></div>
+</section>
+
+<!-- ESTATES -->
+<section class="estates" id="estates">
+  <div class="wrap">
+    <div class="estates-head reveal">
+      <div>
+        <p class="eyebrow">THE PORTFOLIO</p>
+        <h2>Addresses currently<br>under private release.</h2>
+      </div>
+      <p>A working sample — swap in live listings, pricing and photography once inventory is finalised.</p>
+    </div>
+    <div class="carousel-wrap reveal">
+      <div class="carousel" id="estateCarousel">
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Hill Retreat</span><img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1200&auto=format&fit=crop" alt="Villa at The Ridge Residences, Kasauli"></div>
+          <div class="estate-info">
+            <div class="loc">Kasauli, Himachal Pradesh</div>
+            <h3>The Ridge Residences</h3>
+            <div class="price">₹6.2 Cr onwards</div>
+            <div class="feats"><span>4 BHK</span><span>Pine-facing</span><span>Private deck</span></div>
+          </div>
+        </div>
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Golf Estate</span><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop" alt="Villa at Aravali Greens, Sohna"></div>
+          <div class="estate-info">
+            <div class="loc">Sohna, Gurgaon</div>
+            <h3>Aravali Greens</h3>
+            <div class="price">₹8.5 Cr onwards</div>
+            <div class="feats"><span>5 BHK</span><span>Golf-facing</span><span>Private pool</span></div>
+          </div>
+        </div>
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Riverfront</span><img src="https://images.unsplash.com/photo-1502005229766-a3d75d451d34?q=80&w=1200&auto=format&fit=crop" alt="Riverfront Estate, Rishikesh"></div>
+          <div class="estate-info">
+            <div class="loc">Rishikesh, Uttarakhand</div>
+            <h3>Riverfront Estate</h3>
+            <div class="price">₹11 Cr onwards</div>
+            <div class="feats"><span>6 BHK</span><span>Riverfront</span><span>Private jetty</span></div>
+          </div>
+        </div>
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Farmhouse</span><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop" alt="The Manor, Chattarpur"></div>
+          <div class="estate-info">
+            <div class="loc">Chattarpur, New Delhi</div>
+            <h3>The Manor</h3>
+            <div class="price">₹15 Cr onwards</div>
+            <div class="feats"><span>7 BHK</span><span>Farmhouse</span><span>Staff quarters</span></div>
+          </div>
+        </div>
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Mountain View</span><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop" alt="Pine Crest, Mussoorie"></div>
+          <div class="estate-info">
+            <div class="loc">Mussoorie, Uttarakhand</div>
+            <h3>Pine Crest</h3>
+            <div class="price">₹7.4 Cr onwards</div>
+            <div class="feats"><span>4 BHK</span><span>Valley view</span><span>Fireplace</span></div>
+          </div>
+        </div>
+
+        <div class="estate-card">
+          <div class="img-box"><span class="estate-tag">Heritage</span><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop" alt="Neemrana Vantage"></div>
+          <div class="estate-info">
+            <div class="loc">Neemrana, Rajasthan</div>
+            <h3>Neemrana Vantage</h3>
+            <div class="price">₹9 Cr onwards</div>
+            <div class="feats"><span>5 BHK</span><span>Heritage-inspired</span><span>Courtyard</span></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-nav">
+        <button id="carLeft" aria-label="Scroll left">←</button>
+        <button id="carRight" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="gallery-head reveal">
+      <p class="eyebrow">INSIDE THE PORTFOLIO</p>
+      <h2>A closer look, room by room.</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="g-item tall">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=900&auto=format&fit=crop" alt="Living room with floor-to-ceiling windows, Aravali Greens">
+        <div class="g-cap">Living Room · Aravali Greens</div>
+      </div>
+      <div class="g-item wide">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop" alt="Private infinity pool at dusk, Sohna estate">
+        <div class="g-cap">Infinity Pool · Sohna</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Courtyard entrance, Neemrana Vantage">
+        <div class="g-cap">Courtyard · Neemrana</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=900&auto=format&fit=crop" alt="Villa exterior lit at night, Chattarpur">
+        <div class="g-cap">Facade at Dusk · Chattarpur</div>
+      </div>
+      <div class="g-item wide">
+        <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1400&auto=format&fit=crop" alt="Modern kitchen and dining area, Pine Crest villa">
+        <div class="g-cap">Kitchen &amp; Dining · Pine Crest</div>
+      </div>
+      <div class="g-item">
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=900&auto=format&fit=crop" alt="Rooftop deck overlooking the valley, Mussoorie">
+        <div class="g-cap">Rooftop Deck · Mussoorie</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕ CLOSE</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
+
+<!-- LOCATIONS -->
+<section class="locations" id="locations">
+  <div class="wrap">
+    <p class="eyebrow reveal">WHERE WE OPERATE</p>
+    <h2 class="reveal">North India's addresses,<br>mapped by those who live there.</h2>
+    <div class="loc-grid">
+      <div class="loc-item reveal" style="background-image:none;" data-bg="https://images.unsplash.com/photo-1580500550469-49a936927c93?q=80&w=900&auto=format&fit=crop">
+        <span class="name">Gurgaon &amp; Sohna</span><span class="rate">from ₹18,500 / sq.ft</span>
+      </div>
+      <div class="loc-item reveal" data-bg="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=900&auto=format&fit=crop">
+        <span class="name">Kasauli &amp; Shimla</span><span class="rate">from ₹9,800 / sq.ft</span>
+      </div>
+      <div class="loc-item reveal" data-bg="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=900&auto=format&fit=crop">
+        <span class="name">Mussoorie &amp; Dehradun</span><span class="rate">from ₹11,200 / sq.ft</span>
+      </div>
+      <div class="loc-item reveal" data-bg="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=900&auto=format&fit=crop">
+        <span class="name">Rishikesh &amp; Neemrana</span><span class="rate">from ₹8,400 / sq.ft</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="why-row reveal">
+      <div>
+        <p class="num">01 — Verification</p>
+        <h3>Every listing, cleared before it reaches you.</h3>
+        <p>Title search, RERA compliance and encumbrance checks are run on every address before it enters the portfolio — due diligence you'd otherwise pay a lawyer for.</p>
+      </div>
+      <div class="img-col"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop" alt="Legal documents and property blueprint"></div>
+    </div>
+    <div class="why-row reverse reveal">
+      <div>
+        <p class="num">02 — Discretion</p>
+        <h3>Off-market addresses, held in confidence.</h3>
+        <p>A meaningful share of our inventory never appears in a public listing. Viewings are arranged privately, and transactions can be structured under NDA where required.</p>
+      </div>
+      <div class="img-col"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt="Private luxury living room"></div>
+    </div>
+    <div class="why-row reveal">
+      <div>
+        <p class="num">03 — Relationship</p>
+        <h3>One advisor, start to close.</h3>
+        <p>A single relationship manager carries you from the first shortlist through to registration — no handoffs, no call centres, no chasing.</p>
+      </div>
+      <div class="img-col"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Advisor discussing plans with clients"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <p class="eyebrow reveal">FROM THE PORTFOLIO</p>
+    <h2 class="reveal" style="margin-top:1rem; max-width:20ch;">Clients who bought before we ever put it online.</h2>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <p class="quote">"We described what we wanted to Nivas at 11pm and had three shortlisted addresses by morning. Saved us a month of site visits."</p>
+        <div class="who">— A. Malhotra, Industrialist, Delhi NCR</div>
+      </div>
+      <div class="test-card reveal">
+        <p class="quote">"The discretion mattered more to us than the discount. Nothing about this deal was ever public."</p>
+        <div class="who">— R. Chadha, Founder, Gurgaon</div>
+      </div>
+      <div class="test-card reveal">
+        <p class="quote">"One advisor, one number to call, zero surprises at registration. That's rarer than it should be."</p>
+        <div class="who">— S. Bedi, Managing Partner, Chandigarh</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT US / MAP -->
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <p class="eyebrow">VISIT US</p>
+      <h2>Where the address hunt begins.</h2>
+      <div class="visit-details">
+        <div class="vd-row">
+          <span class="vd-label">Office</span>
+          <span class="vd-value">PerSqFt Estates<br>C-21A, Block C, Sushant Lok Phase I, Sector 43,<br>Gurugram, Haryana 122009</span>
+        </div>
+        <div class="vd-row">
+          <span class="vd-label">Hours</span>
+          <span class="vd-value">Mon – Sat, 9:30 AM – 6:30 PM<br>Sunday: Closed</span>
+        </div>
+        <div class="vd-row">
+          <span class="vd-label">Phone</span>
+          <span class="vd-value"><a href="tel:+918800000166">+91 88000 00166</a></span>
+        </div>
+        <div class="vd-row">
+          <span class="vd-label">Directions</span>
+          <span class="vd-value"><a href="https://maps.app.goo.gl/GkQmAx5x2W2mTMSM6" target="_blank" rel="noopener">Open in Google Maps ↗</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="map-frame reveal">
+      <span class="map-badge">Sushant Lok I, Gurugram</span>
+      <iframe src="https://maps.google.com/maps?q=28.4593328,77.0798736&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PerSqFt Estates office location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <div class="cta-inner reveal">
+      <p class="eyebrow" style="color:var(--brass-light);">PRIVATE VIEWINGS</p>
+      <h2 style="margin-top:1rem;">Let's find your address.</h2>
+      <p>Leave a number and budget range — a relationship manager will call within one business day, before anything goes on a public listing.</p>
+      <form class="cta-form" id="ctaForm">
+        <input type="tel" placeholder="Your phone number" required>
+        <button type="submit">Notify Me</button>
+      </form>
+      <p class="form-note" id="formNote">Direct line: +91 88000 00166 · Sushant Lok I, Gurugram</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#" class="logo">Per<b>SqFt</b><span>ESTATES · NORTH INDIA</span></a>
+        <p>A curated brokerage for villas, hill retreats and private estates across North India, built for buyers who value discretion as much as design.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="#estates">Estates</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#locations">Locations</a>
+        <a href="#nivas">Nivas AI</a>
+        <a href="#why">Why Us</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#">Our Story</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="foot-col">
+        <h4>Reach Us</h4>
+        <a href="https://maps.app.goo.gl/GkQmAx5x2W2mTMSM6" target="_blank" rel="noopener">C-21A, Sushant Lok I, Gurugram ↗</a>
+        <a href="mailto:advisory@persqft.in">advisory@persqft.in</a>
+        <a href="tel:+918800000166">+91 88000 00166</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PerSqFt Estates. All rights reserved.</span>
+      <span>RERA registrations available on request for each listed project.</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
